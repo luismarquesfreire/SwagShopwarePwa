@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace SwagShopwarePwa\Pwa\Controller;
 
@@ -30,6 +32,8 @@ class PageController extends AbstractController
     const NAVIGATION_PAGE_ROUTE = 'frontend.navigation.page';
 
     const LANDING_PAGE_ROUTE = 'frontend.landing.page';
+
+    const BLOG_PAGE_ROUTE = 'sas.frontend.blog.detail';
 
     /**
      * @var PageLoaderContextBuilderInterface

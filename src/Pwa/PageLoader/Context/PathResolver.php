@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace SwagShopwarePwa\Pwa\PageLoader\Context;
 
@@ -18,7 +20,8 @@ class PathResolver implements PathResolverInterface
     private const MATCH_MAP = [
         PageController::NAVIGATION_PAGE_ROUTE => '/^\/?navigation\/([a-f0-9]{32})$/',
         PageController::PRODUCT_PAGE_ROUTE => '/^\/?detail\/([a-f0-9]{32})$/',
-        PageController::LANDING_PAGE_ROUTE => '/^\/?landingPage\/([a-f0-9]{32})$/'
+        PageController::LANDING_PAGE_ROUTE => '/^\/?landingPage\/([a-f0-9]{32})$/',
+        PageController::BLOG_PAGE_ROUTE => '/^\/?sas_blog\/([a-f0-9]{32})$/',
     ];
 
     private const ROOT_ROUTE_NAME = PageController::NAVIGATION_PAGE_ROUTE;
